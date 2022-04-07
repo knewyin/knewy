@@ -7,13 +7,16 @@
 <style>
 * {box-sizing: border-box;}
 
+
+
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-}
+  overflow-x: hidden;
 
+}
 .container{
 	max-width: 1170px;
 	margin:auto;
@@ -85,21 +88,6 @@ ul{
 	background-color: #ffffff;
 }
 
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-
-
-
-
-
-
-
-
-
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
@@ -126,10 +114,18 @@ h1 {
 
 @font-face {
   font-family: Poppins;
-  src: url(fonts/Poppins-Light.ttf)
+  src: url(fonts/Poppins-Light.ttf);
 }
 
+@font-face {
+  font-family: PoppinsM;
+  src: url(fonts/Poppins-Medium.ttf);
+}
 
+@font-face {
+  font-family: PoppinsSB;
+  src: url(fonts/Poppins-SemiBold.ttf);
+}
 .header a {
   float: left;
   color: rgba(0, 255, 208, 0.623);
@@ -150,6 +146,7 @@ h1 {
   font-family: Poppins;
 
 
+
 }
 
 
@@ -157,15 +154,74 @@ h1 {
   float: right;
 }
 
+div.a {
+  font-family: PoppinsSB;
+  color: white;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  line-height: 90%;
+  font-size: 50px;
+
+}
+
+div.b{
+  font-family: PoppinsM;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  
+}
+
+.exclam{
+  font-family: PoppinsM;
+  color: rgba(0, 255, 208, 0.623);
+  text-align: center;
+  font-size: 40px;
+}
+
+div.c{
+  font-family: PoppinsM;
+  color: white;
+  padding-left: 50px;
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+.theg{
+  font-family: PoppinsM;
+  color: rgba(0, 255, 208, 0.623);
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+div.d{
+  font-family: PoppinsM;
+  color: white;
+  padding-left: 50px;
+  font-size: 20px;
+  padding-top: 10px;
+
+}
+
 .vl {
   border-left: 6px solid black;
   height: 70px;
 }
 
-
-hr.solid {
-    border-top: 1px solid white;
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
 }
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -177,16 +233,12 @@ hr.solid {
     float: none;
   }
 }
+  
+  hr.solid {
+    border-top: 1px solid white;
+    
+  }
 
-h3{
-  color: #000000;
-  text-align: center;
-}
-
-iframe{
-    color: #000000;
-    padding-left: 10cm;
-}
 
 </style>
 </head>
@@ -194,19 +246,17 @@ iframe{
 
 <div class="header">
   <div class="header-left">
-      <a href="file:///E:/vs%20code/Knewy/docs/index.html" class="logo">Knewy</a> 
+      <a href="index.html" class="logo">Knewy</a> 
   </div>
   
   <div class="header-right">
-    <a class="active" href="file:///E:/vs%20code/Knewy/docs/index.html">Home</a>
+    <a class="active" href="index.html">Home</a>
     <a href="https://medium.com/">Blog</a>
-    <a href="file:///E:/vs%20code/Knewy/resources.html">Resources</a>
+    <a href="resources.html">Resources</a>
     <a href="volenteer.html">Volenteer</a>
   </div>
 </div>
 
-
-<iframe width="560" height="400" src="https://www.youtube.com/embed/9YffrCViTVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class="vl"></div>
 
@@ -220,7 +270,6 @@ iframe{
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="#">Find Tutors</a></li>
           <li><a href="#">Resources</a></li>
           <li><a href="#">Volenteer</a></li>
           <li><a href="#">Donations</a></li>
