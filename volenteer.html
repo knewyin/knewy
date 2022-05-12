@@ -13,6 +13,9 @@ body {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
+div.f{
+  color: #000000;
+}
 
 .container{
 	max-width: 1170px;
@@ -105,6 +108,52 @@ ul{
 h1 {
   font-size: 50px;
   word-break: break-all;
+}
+
+.row {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 5px 5px 2px 2px grey;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 
@@ -219,6 +268,67 @@ h3{
   <iframe width="560" height="315" src="https://www.youtube.com/embed/OOy764mDtiA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <hr class="solid">
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <h3>CBSE</h3>
+      <div class="f"> 
+        <a href = "https://www.cbse.gov.in/cbsenew/samplepaper.html">Class 10 and 12 sample papers </a><br>
+        <a href = "https://www.ncertbooks.guru/ncert-books-pdf/amp/#NCERT_Books_for_Class_9">Class 9 books pdf </a><br>
+        <a href = "https://www.ncertbooks.guru/ncert-books-pdf/amp/#NCERT_Books_for_Class_10">Class 10 books pdf </a><br>
+        <a href = "https://www.ncertbooks.guru/ncert-books-pdf/amp/#NCERT_Books_for_Class_11">Class 11 books pdf </a><br>
+        <a href = "https://www.ncertbooks.guru/ncert-books-pdf/amp/#NCERT_Books_for_Class_12">Class 12 books pdf </a><br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <h3>ICSE</h3>
+      <div class="f"> 
+        <a href = "https://www.cisce.org/">ISCE official website </a><br>
+        <a href = "https://www.cisce.org/publications.aspx">ISCE official resouces </a><br>
+        <a href = "https://cisce.org/Class_IX_Specimen_Question_Papers_2019.aspx">Class 9 sample question paper </a><br>
+        <a href = "https://www.cisce.org/icse_X_Specimen_Question_Papers.aspx">Class 10 sample question paper </a><br>
+        <a href = "https://cisce.org/Class_XI_Specimen_Question_Papers_2019.aspx">Class 11 sample question paper </a><br>
+        <a href = "https://www.cisce.org/publicationdetail.aspx?id=57">Class 12 sample question paper </a><br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <h3>NIOS</h3>
+      <div class="f"> 
+        <a href = "https://www.nios.ac.in/">NIOS official website </a><br>
+        <a href = "https://nios.ac.in/online-course-material/sr-secondary-courses.aspx">Official NIOS resouces </a><br>
+        <a href = "https://www.youtube.com/c/NIOSSeniorSecondaryCourses/videos">Offical NIOS youtube channel </a><br>
+        <a href = "https://www.youtube.com/c/NIOSLIVEVIDEO">Offical NIOS youtube channel 2 </a><br>
+        <a href = "https://nios.ac.in/student-information-section/question-paper-of-previous-year-examination-academic.aspx">Official NIOS previous year papers </a><br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <h3>SAT</h3>w
+      <div class="f"> 
+        <a href = "https://www.khanacademy.org/sat">Khan Academy tutorials </a><br>
+        <a href = "https://www.collegeboard.org/">College Board (SAT officail website) </a><br>
+        <a href = "https://www.cracksat.net/index.html">Sample Question Papers </a><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
 
 <footer class="footer">
   <div class="container">
