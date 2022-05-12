@@ -85,19 +85,27 @@ ul{
 	background-color: #ffffff;
 }
 
+.videowrapper{
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 25px;
+  height: 0px;
+}
+
+.videowrapper iframe {
+  position: absolute;
+  left: 225px;
+  top:0px;
+  right: 0px;
+  bottom: 0px;
+  height: 75%;
+  width: 75%;
+}
 
 h1 {
   font-size: 50px;
   word-break: break-all;
 }
-
-
-
-
-
-
-
-
 
 
 /*responsive*/
@@ -207,7 +215,9 @@ h3{
 
 
 <div class="vl"></div>
-<img class="gw" src="https://github.com/knewyin/knewy/blob/main/images/teachvolenter.jpg?raw=trues" alt="volee" style="width:100%">
+<div class = "videowrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/OOy764mDtiA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <hr class="solid">
 
 <footer class="footer">
